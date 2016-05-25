@@ -1,0 +1,27 @@
+{
+  "name": "angular-start",
+  "private": true,
+  "version": "0.0.4",
+  "description": "A starter project for AngularJS Material",
+  "repository": "https://github.com/pjagga/angular-material",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/material/blob/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1",
+    "cucumber": "^0.9.1",
+    "jshint-stylish": "^0.2.0",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "load-grunt-tasks": "^0.4.0",
+    "protractor": "^1.2.0"
+  },
+  "dependencies": {
+    "cucumber": "^0.10.3",
+    "protractor-cucumber-framework": "^0.5.0"
+  }
+}

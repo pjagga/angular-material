@@ -63,6 +63,7 @@ var contactManagerApp;
                 var newUser = contactManagerApp.User.fromCreate(user);
                 self.users.push(newUser);
                 self.selectUser(newUser);
+                self.openToast("User Added");
             }, function () {
                 console.log("You cancelled the dialog");
             });

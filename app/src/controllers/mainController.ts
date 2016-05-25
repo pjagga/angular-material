@@ -77,6 +77,7 @@ module contactManagerApp {
                 var newUser: User = User.fromCreate(user);
                 self.users.push(newUser);
                 self.selectUser(newUser);
+                self.openToast("User Added");
             }, () => {
                 console.log("You cancelled the dialog");
             });
