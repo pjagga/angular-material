@@ -4,7 +4,7 @@
     <md-toolbar>
         <h1>Contacts</h1>
     </md-toolbar>
-        <div layout-padding>
+        <div layout-padding data-test="contacts-search">
             <md-autocomplete
                     md-search-text="vm.searchText"
                     md-items="item in vm.users | filter:vm.searchText"
@@ -19,7 +19,7 @@
                 </md-not-found>
             </md-autocomplete>
         </div>
-    <md-content class="scrollable-nav-content">
+    <md-content class="scrollable-nav-content" data-test="contactsSearchResult">
         <md-list>
             <md-list-item ng-repeat="user in vm.users | filter:vm.searchText | orderBy: 'name'">
                 <md-button ng-click="vm.selectUser(user)"

@@ -74,7 +74,7 @@ module contactManagerApp {
                 clickOutsideToClose: true,
                 fullscreen: useFullScreen
             }).then((user: CreateUser) => {
-                var newUser: User = User.fromCreate(user);
+                var newUser =  User.fromCreate(user);
                 self.users.push(newUser);
                 self.selectUser(newUser);
                 self.openToast("User Added");

@@ -18,11 +18,8 @@ exports.config = {
     }
   },
   cucumberOpts: {
+    tags:['@pj'],
     require: '../test/e2e/features/step_defs/*.js',
     format: 'pretty'
   }
 };
-
-
-
-
